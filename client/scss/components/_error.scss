@@ -1,0 +1,20 @@
+.error {
+  &__box {
+    width: max-content;
+    padding: 1rem;
+    margin: .5rem;
+    border: 2px solid $color-red;
+    border-radius: .5rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 500;
+    color: $color-red;
+    margin-bottom: .5rem;
+  }
+
+  &__message {
+    color: $color-red;
+  }
+}

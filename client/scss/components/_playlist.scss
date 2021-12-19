@@ -1,0 +1,53 @@
+.playlist {
+  grid-area: playlist;
+  list-style: none;
+  border-left: 1px solid $color-primary;
+  border-right: 1px solid $color-primary;
+  overflow: auto;
+
+  /* ScrollBar */
+  &::-webkit-scrollbar {
+    transform: translateX(10px);
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: inherit;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-primary;
+    border-radius: 6px;
+    border: 3px solid $color-bg;
+  }
+  /* /ScrollBar */
+
+  &__item {
+    padding: 2rem;
+
+    &:not(:last-child) {
+      border-bottom: 2px solid $color-secondary;
+    }
+
+    &--current {
+      background-color: $color-tertiary;
+    }
+  }
+
+  &__heading {
+    grid-area: heading;
+  }
+
+  &__name {
+    grid-area: name;
+    letter-spacing: .2rem;
+    color: $color-grey;
+  }
+
+  &__play-button {
+    grid-area: btn;
+    width: 3.8rem;
+    height: 3.8rem;
+    cursor: pointer;
+  }
+}

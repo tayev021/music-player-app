@@ -1,0 +1,15 @@
+.header {
+  grid-area: header;
+  padding: 2rem 2rem 2rem 2.2rem;
+  background-color: $color-primary;
+
+  &__logo,
+  &__hider {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__hider {
+    cursor: pointer;
+  }
+}

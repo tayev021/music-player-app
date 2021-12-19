@@ -1,0 +1,79 @@
+.player {
+  grid-area: player;
+  padding: 2rem;
+  background-color: $color-primary;
+
+  &__audio {
+    display: none;
+  }
+
+  &__track {
+    grid-area: tr;
+    align-self: stretch;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: .3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    background-color: $color-bg;
+    cursor: pointer;
+    transition: all .5s;
+  }
+
+  &__time {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $color-white;
+
+    &--1 {
+      grid-area: t1;
+    }
+
+    &--2 {
+      grid-area: t2;
+      justify-self: end;
+    }
+  }
+
+  &__play,
+  &__backward,
+  &__forward,
+  &__all-button,
+  &__loop-button,
+  &__once-button,
+  &__shuffle-button {
+    width: 3.2rem;
+    height: 3.2rem;
+    justify-self: center;
+    cursor: pointer;
+  }
+
+  &__play {
+    grid-area: p;
+  }
+
+  &__backward {
+    grid-area: pp;
+  }
+
+  &__forward {
+    grid-area: pn;
+  }
+
+  &__all-button {
+    grid-area: al;
+  }
+
+  &__once-button {
+    grid-area: po;
+  }
+
+  &__loop-button {
+    grid-area: lp;
+  }
+
+  &__shuffle-button {
+    grid-area: sh;
+  }
+}
